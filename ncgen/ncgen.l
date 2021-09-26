@@ -39,7 +39,9 @@
 #include "ncgeny.h"
 #include "isnan.h"
 
+#if !defined(fileno)
 EXTERNL int fileno(FILE*);
+#endif
 
 #define FILL_STRING "_"
 #define XDR_INT32_MIN (-2147483647-1)

@@ -25,7 +25,9 @@
    We include lexical definitions for all three, but use the second version.
 */
 
+#if !defined(fileno)
 extern int fileno(FILE*);
+#endif
 
 /* lex specification for tokens for ncgen */
 
